@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpha Kappa Psi &mdash; Wayne State University</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <img src="logo.svg" alt="Alpha Kappa Psi" class="logo" />
+    <h1>Alpha Kappa Psi</h1>
+    <p class="subtitle">Wayne State University &middot; Professional Business Fraternity</p>
+
+    <div class="links">
+      <a class="btn" href="https://eboard.wsuakpsi.com" target="_blank" rel="noopener">Eboard Portal</a>
+      <a class="btn" href="https://brother.wsuakpsi.com" target="_blank" rel="noopener">Brother Portal</a>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> Alpha Kappa Psi &mdash; Wayne State University
+    </footer>
+  </main>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

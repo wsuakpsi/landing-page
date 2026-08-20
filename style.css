@@ -1,0 +1,74 @@
+:root {
+  --gold: #c9a227;
+  --dark: #14100a;
+  --text: #f5f0e6;
+  --muted: #b8ae9c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark);
+  color: var(--text);
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.wrap {
+  max-width: 480px;
+}
+
+.logo {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin: 0 0 2.5rem;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+footer {
+  margin-top: 3rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
