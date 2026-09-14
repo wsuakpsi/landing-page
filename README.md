@@ -7,6 +7,7 @@ and Brother Portal (hosted separately in the `akpsi-portal` repo).
 
 - `index.html` — the page
 - `style.css` — styling
+- `year.js` — sets the footer year (kept external so the page's CSP can disallow inline scripts)
 - `logo.svg` — placeholder logo, swap for the real chapter logo
 
 ## Portal links

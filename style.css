@@ -72,3 +72,15 @@ footer {
   color: var(--muted);
   font-size: 0.8rem;
 }
+
+/* Keyboard focus ring for the portal buttons. */
+.btn:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}
