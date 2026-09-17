@@ -3,29 +3,366 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alpha Kappa Psi at Wayne State University — professional business fraternity. Portal links for brothers and E-Board." />
+  <meta name="description" content="Alpha Kappa Psi, Beta Omicron chapter at Wayne State University. The premier professional business fraternity: brotherhood, professional development, service, and a lifelong network." />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="color-scheme" content="dark" />
-  <meta name="theme-color" content="#14100a" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'self'; form-action 'none'; frame-src 'none'; object-src 'none'" />
+  <meta name="theme-color" content="#08111f" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'none'; frame-src 'none'; object-src 'none'" />
+  <meta property="og:title" content="Alpha Kappa Psi — Wayne State University" />
+  <meta property="og:description" content="Beta Omicron chapter of the premier professional business fraternity. Rush, events, and portals." />
+  <meta property="og:image" content="logo.jpg" />
   <title>Alpha Kappa Psi &mdash; Wayne State University</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+  <link rel="preload" href="fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/instrument-sans-var.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="wrap">
-    <img src="logo.svg" alt="Alpha Kappa Psi" class="logo" />
-    <h1>Alpha Kappa Psi</h1>
-    <p class="subtitle">Wayne State University &middot; Professional Business Fraternity</p>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
 
-    <div class="links">
-      <a class="btn" href="https://eboard.wsuakpsi.com" target="_blank" rel="noopener noreferrer">Eboard Portal</a>
-      <a class="btn" href="https://brother.wsuakpsi.com" target="_blank" rel="noopener noreferrer">Brother Portal</a>
-    </div>
+  <!-- ─────────────────────────── Nav ─────────────────────────── -->
+  <header class="nav" id="nav">
+    <a class="nav-brand load load-1" href="#top" aria-label="Alpha Kappa Psi home">
+      <img src="logo.jpg" alt="" class="nav-logo" />
+      <span class="nav-brand-text">
+        <span class="nav-brand-name">Alpha Kappa Psi</span>
+        <span class="nav-brand-sub">Beta Omicron &middot; Wayne State</span>
+      </span>
+    </a>
 
-    <footer>
-      &copy; <span id="year"></span> Alpha Kappa Psi &mdash; Wayne State University
-    </footer>
+    <button class="nav-toggle load load-1" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav-menu" id="nav-menu" aria-label="Site">
+      <a href="#about">About</a>
+      <a href="#values">Values</a>
+      <a href="#pillars">Programs</a>
+      <a href="#rush">Rush</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <div class="nav-portals">
+        <a class="btn btn-line" href="https://brother.wsuakpsi.com" target="_blank" rel="noopener noreferrer">Brother Portal</a>
+        <a class="btn btn-solid" href="https://eboard.wsuakpsi.com" target="_blank" rel="noopener noreferrer">E-Board Portal</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ─────────────────────────── Hero ─────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-atmo" aria-hidden="true">
+        <div class="light light-a" data-parallax="0.18"></div>
+        <div class="light light-b" data-parallax="0.32"></div>
+        <div class="grid-lines" data-parallax="0.06"></div>
+        <div class="glyph load load-4" data-parallax="-0.14">&Psi;</div>
+      </div>
+
+      <div class="hero-inner">
+        <p class="eyebrow load load-2">Beta Omicron Chapter &nbsp;/&nbsp; Wayne State University &nbsp;/&nbsp; Est. 1904</p>
+        <h1 id="hero-title" class="hero-title">
+          <span class="line load load-2">Principled</span>
+          <span class="line load load-3"><em>business</em> leaders,</span>
+          <span class="line load load-4">built here.</span>
+        </h1>
+        <div class="hero-row">
+          <p class="hero-sub load load-5">
+            Alpha Kappa Psi is the premier professional business fraternity. At Wayne State,
+            that means a brotherhood that sharpens your skills, widens your network, and
+            holds you to a higher standard.
+          </p>
+          <div class="hero-cta load load-6">
+            <a class="btn btn-solid btn-lg" href="#rush">Rush Beta Omicron</a>
+            <a class="btn btn-line btn-lg" href="#about">What we're about</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-foot load load-6" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="hero-foot-rule"></span>
+        <span>Detroit, MI</span>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Ticker / stats ─────────────────────────── -->
+    <section class="ticker" aria-label="Fraternity at a glance">
+      <div class="ticker-item"><span class="ticker-num">1904</span><span class="ticker-label">Founded, New York University</span></div>
+      <div class="ticker-item"><span class="ticker-num">300k<sup>+</sup></span><span class="ticker-label">Members initiated worldwide</span></div>
+      <div class="ticker-item"><span class="ticker-num">200<sup>+</sup></span><span class="ticker-label">Active chapters</span></div>
+      <div class="ticker-item"><span class="ticker-num">1976</span><span class="ticker-label">Co-ed since</span></div>
+    </section>
+
+    <!-- ─────────────────────────── About ─────────────────────────── -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="light light-c" data-parallax="0.22" aria-hidden="true"></div>
+      <div class="wrap about-grid">
+        <div class="about-text">
+          <p class="eyebrow">Who we are</p>
+          <h2 id="about-title">More than a fraternity.<br />A launchpad.</h2>
+          <p>
+            Alpha Kappa Psi is the oldest and largest professional business fraternity in the
+            world. The Beta Omicron chapter brings that legacy to Wayne State University, where
+            students from every major come together to sharpen their skills, build lasting
+            friendships, and open doors they didn't know existed.
+          </p>
+          <p>
+            We're a co-ed organization open to students of all majors who share a drive to grow
+            professionally and personally. Our brothers go on to careers in finance, consulting,
+            marketing, tech, entrepreneurship, healthcare, and more, and they stay connected long
+            after graduation.
+          </p>
+          <ul class="rule-list">
+            <li>Open to all majors and all years</li>
+            <li>Co-ed since 1976</li>
+            <li>Lifetime membership and alumni network</li>
+          </ul>
+        </div>
+
+        <div class="about-stack" aria-hidden="true">
+          <div class="stack-back" data-parallax="0.1"></div>
+          <div class="stack-front" data-parallax="-0.06">
+            <span class="stack-kicker">Beta Omicron</span>
+            <span class="stack-big">&Alpha;&Kappa;&Psi;</span>
+            <span class="stack-foot">Wayne State University<br />Detroit, Michigan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Values (paper block) ─────────────────────────── -->
+    <section class="section paper" id="values" aria-labelledby="values-title">
+      <div class="wrap">
+        <div class="paper-head">
+          <p class="eyebrow">Core values</p>
+          <h2 id="values-title">Five words we<br />hold ourselves to.</h2>
+        </div>
+        <ol class="value-list">
+          <li class="value-row">
+            <span class="value-num">01</span>
+            <h3 class="value-name">Brotherhood</h3>
+            <p class="value-desc">A bond that outlasts college. We show up for each other, in the classroom, at work, and in life.</p>
+          </li>
+          <li class="value-row">
+            <span class="value-num">02</span>
+            <h3 class="value-name">Knowledge</h3>
+            <p class="value-desc">Workshops, speakers, and mentorship that turn what you learn in class into skills you can actually use.</p>
+          </li>
+          <li class="value-row">
+            <span class="value-num">03</span>
+            <h3 class="value-name">Integrity</h3>
+            <p class="value-desc">Doing the right thing when no one is watching. It's the foundation of every principled business leader.</p>
+          </li>
+          <li class="value-row">
+            <span class="value-num">04</span>
+            <h3 class="value-name">Service</h3>
+            <p class="value-desc">Giving back to Detroit and the Wayne State community through hands-on service every semester.</p>
+          </li>
+          <li class="value-row">
+            <span class="value-num">05</span>
+            <h3 class="value-name">Unity</h3>
+            <p class="value-desc">Different majors, backgrounds, and goals, moving in the same direction. Stronger together than apart.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Programs (staggered) ─────────────────────────── -->
+    <section class="section programs" id="pillars" aria-labelledby="pillars-title">
+      <div class="light light-d" data-parallax="0.2" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="programs-head">
+          <p class="eyebrow">What we do</p>
+          <h2 id="pillars-title">Every semester,<br />four kinds of work.</h2>
+          <p class="lede">
+            Brothers earn points across each pillar, so everyone gets the full experience,
+            not just the parts they're already comfortable with.
+          </p>
+        </div>
+
+        <div class="programs-grid">
+          <article class="program program-1">
+            <span class="program-ghost">01</span>
+            <h3>Professional</h3>
+            <p>Resume reviews, mock interviews, case competitions, and speakers from companies across Detroit and beyond. Build the skills and the network before you need them.</p>
+          </article>
+          <article class="program program-2">
+            <span class="program-ghost">02</span>
+            <h3>Service</h3>
+            <p>Volunteer days, drives, and partnerships with local organizations. Leadership means lifting the community around you.</p>
+          </article>
+          <article class="program program-3">
+            <span class="program-ghost">03</span>
+            <h3>Fundraising</h3>
+            <p>Run real campaigns with real budgets. Plan it, pitch it, execute it, and see the numbers, the same way you will in your career.</p>
+          </article>
+          <article class="program program-4">
+            <span class="program-ghost">04</span>
+            <h3>Social</h3>
+            <p>Formals, game nights, retreats, and the everyday moments that turn a chapter roster into a family.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Rush ─────────────────────────── -->
+    <section class="section rush" id="rush" aria-labelledby="rush-title">
+      <div class="wrap rush-grid">
+        <div class="rush-head">
+          <p class="eyebrow">Join us</p>
+          <h2 id="rush-title">Rush happens<br />every semester.</h2>
+          <p class="lede">
+            A week of events where you meet the brothers, learn what we're about, and decide if
+            it's the right fit. No pressure, no cost to attend, open to all majors.
+          </p>
+          <div class="rush-cta">
+            <span class="rush-cta-label">Fall &amp; Spring rush dates</span>
+            <span class="rush-cta-text">Follow us on Instagram or email the chapter for this semester's schedule.</span>
+            <a class="btn btn-solid btn-lg" href="#contact">Get rush info</a>
+          </div>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">1</span>
+            <div class="step-body">
+              <h3>Come to an info night</h3>
+              <p>Meet the chapter, hear from current brothers, and ask anything you want.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <div class="step-body">
+              <h3>Attend rush events</h3>
+              <p>A mix of professional and social events across the week. Show up, be yourself.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <div class="step-body">
+              <h3>Interview and receive a bid</h3>
+              <p>A short conversation with brothers, then bids go out to the students we think will thrive here.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">4</span>
+            <div class="step-body">
+              <h3>Pledge and get initiated</h3>
+              <p>A structured pledge program that teaches the history, the values, and the skills, then initiation into a lifelong brotherhood.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Leadership ─────────────────────────── -->
+    <section class="section leadership" id="leadership" aria-labelledby="leadership-title">
+      <div class="wrap lead-grid">
+        <div class="lead-head">
+          <p class="eyebrow">Leadership</p>
+          <h2 id="leadership-title">Run by students,<br />for students.</h2>
+          <p class="lede">
+            Our Executive Board is elected each year by the brothers. Every officer is a full-time
+            student who chose to take on the work of building something bigger than themselves.
+          </p>
+        </div>
+        <dl class="roles">
+          <div class="role"><dt>President</dt><dd>Vision, chapter direction, and representing Beta Omicron to the university and nationals.</dd></div>
+          <div class="role"><dt>VP of Membership</dt><dd>Rush, recruitment, and the pledge program.</dd></div>
+          <div class="role"><dt>VP of Finance</dt><dd>Budgets, dues, and fundraising campaigns.</dd></div>
+          <div class="role"><dt>VP of Administration</dt><dd>Attendance, records, and keeping the chapter running.</dd></div>
+          <div class="role"><dt>VP of Professional Development</dt><dd>Speakers, workshops, and career events.</dd></div>
+          <div class="role"><dt>VP of Technology</dt><dd>The chapter portals and everything digital.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── FAQ ─────────────────────────── -->
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="faq-head">
+          <p class="eyebrow">Questions</p>
+          <h2 id="faq-title">Things people<br />usually ask.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq">
+            <summary>Do I have to be a business major?</summary>
+            <p>No. Alpha Kappa Psi is open to students of every major. Many of our brothers study engineering, health sciences, communications, and the liberal arts. What we look for is drive and character, not a specific degree.</p>
+          </details>
+          <details class="faq">
+            <summary>Is it co-ed?</summary>
+            <p>Yes. Alpha Kappa Psi has been co-ed since 1976. Everyone is a "brother" regardless of gender, and that's a tradition we're proud of.</p>
+          </details>
+          <details class="faq">
+            <summary>How much time does it take?</summary>
+            <p>Expect a weekly chapter meeting plus a handful of events per month. Brothers earn points across our four pillars each semester, and you can plan around your class and work schedule. The pledge semester is more involved, and we're upfront about that during rush.</p>
+          </details>
+          <details class="faq">
+            <summary>Are there dues?</summary>
+            <p>Yes. Dues cover national membership, chapter events, and operating costs. The exact amount is shared during rush, and we work with brothers who need a payment plan.</p>
+          </details>
+          <details class="faq">
+            <summary>Professional vs. social fraternity?</summary>
+            <p>Our focus is career and character development. We still have plenty of social events, but every semester is built around professional growth, service, and leadership, not just social life.</p>
+          </details>
+          <details class="faq">
+            <summary>Can I rush as a freshman or a senior?</summary>
+            <p>Freshmen are welcome to rush. Seniors can too, though we'll talk through whether the pledge timeline works with your graduation date.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Contact ─────────────────────────── -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="light light-e" data-parallax="0.16" aria-hidden="true"></div>
+      <div class="wrap contact-grid">
+        <div class="contact-text">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Ready to build<br /><em>something?</em></h2>
+          <p class="lede">Reach out with questions about rush, events, or partnering with the chapter. We read every message.</p>
+        </div>
+        <div class="contact-block">
+          <a class="contact-link" href="mailto:wsuakpsi15@gmail.com">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">wsuakpsi15@gmail.com</span>
+          </a>
+          <a class="contact-link" href="https://www.instagram.com/wsuakpsi" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-label">Instagram</span>
+            <span class="contact-link-value">@wsuakpsi</span>
+          </a>
+          <a class="contact-link" href="https://brother.wsuakpsi.com" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-label">Already a brother</span>
+            <span class="contact-link-value">Brother Portal &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
-  <script src="year.js"></script>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="" class="footer-logo" />
+        <div>
+          <div class="footer-name">Alpha Kappa Psi</div>
+          <div class="footer-sub">Beta Omicron Chapter &middot; Wayne State University &middot; Detroit, MI</div>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#rush">Rush</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://brother.wsuakpsi.com" target="_blank" rel="noopener noreferrer">Brother Portal</a>
+        <a href="https://eboard.wsuakpsi.com" target="_blank" rel="noopener noreferrer">E-Board Portal</a>
+      </nav>
+    </div>
+    <div class="wrap footer-bottom">
+      &copy; <span id="year"></span> Alpha Kappa Psi, Beta Omicron Chapter. Alpha Kappa Psi is a registered trademark of Alpha Kappa Psi Fraternity.
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>
